@@ -193,6 +193,7 @@ select {
 }
 select#vulnability {
     width: 70%;
+    height:150px;
 }
 select#payment-method {
     width: 30%;
