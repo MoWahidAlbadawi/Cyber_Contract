@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cybersecurity Services Contract</title>
+    </head>
+<body>
+    <div class="container">
+        <h1>تسجيل عقد خدمات الأمن السيبراني</h1>
+        <hr>
+        <form id="contract-form">
+
+                <div>
+            <label for="phone" class="text">رقم الهاتف</label>
+            <input type="tel" id="phone" name="phone" placeholder="enter phone number" >
+            </div>
+
+            <div>
+                <label for="name" class="text">الاسم الكامل</label>
+                <input type="text" id="name" name="name" placeholder="enter the full name">
+                    </div>
+
+            <div>
+            <label for="email" class="text">البريد الالكتروني</label>
+            <input type="email" id="email" name="email" placeholder="enter your eamil">
+                </div>
+
+                <div>
+            <label for="website" class="text">موقع الويب</label>
+            <input type="url" id="website" placeholder="your website">
+                    </div>
+
+                    <div class="all sev">
+            <label for="services" class="text">الخدمات المقدمة</label>
+            <div>
+            <button type="button" id="show-services" class="show-services">اختيار الخدمات</button>
+            <div id="services-list" class="hidden">
+                <ul>
+                    <li class="li">اختبار الاختراق</li>
+                    <li class="li">استجابة للحوادث الأمنية</li>
+                    <li class="li">فحص الثفرات الأمنية لتطبيقات الويب</li>
+                    <li class="li">تقييم أمن الشبكة</li>
+                    <li class="li">تخطيط وادارة الاستجابة للحوادث</li>
+                    <li class="li">خدمات تشفير البيانات</li>
+                    <li class="li">حلول أمان استباقية</li>
+                    <li class="li">تقييم وحلول الأمن السحابي</li>
+                    <li class="li">التحقيق في الجرائم الالكترونية</li>
+                    <p class="count-service"></p>
+                </ul>
+                <!-- <div id="service-details" class="hidden">
+                    <p id="service-description"></p>
+                </div> -->
+                </div>
+            </div>
+            </div>
+
+            <div class='all'>
+            <label for="test-time" class="text" style=" border-radius: 6px;">اختيار وقت الاختبار</label>
+            <input type="datetime-local" id="test-time" name="test-time" style="width: 70%;" required>
+        </div>
+
+                <div class="all all2">
+                    <div>
+            <label for="excluded-domains" class="text">الدومينات التي  خارج نطاق الفحص</label>
+            <textarea id="excluded-domains" name="excluded-domains" placeholder="Enter domains that do not allow researchers to access them"></textarea>
+                    </div>
+                    <div>
+            <label for="excluded-vulnerabilities" class="text">الثغرات التي خارج نطاق الفحص</label>
+            <select id="vulnability" name="vulability" required>
+                <option value="dos,ddos">dos,ddos</option>
+                <option value="social enginering">social enginering</option>
+                <option value="zero-day">zero day</option>
+                <option value="sqlLinjection">sqlLinjection</option>
+                <option value="physical-attack">physical attck</option>
+                <option value="vulability in protocol">vulnability in protocol</option>
+                <option value="SSRF">SSRF</option>
+            </select>
+                        </div>
+                        </div>
+                        <div class="all">
+            <label for="payment-method" class="text">طريقة الدفع الإلكتروني</label>
+            <select id="payment-method" name="payment-method" required>
+                <option value="credit-card">credit card</option>
+                <option value="paypal">PayPal</option>
+                <option value="bank-transfer">bank transfer</option>
+            </select>
+            </div>
+<button type="submit" class="done">تسجيل العقد</button>
+        </form>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
