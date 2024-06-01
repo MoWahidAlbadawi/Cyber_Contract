@@ -5,7 +5,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: right;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .container {
