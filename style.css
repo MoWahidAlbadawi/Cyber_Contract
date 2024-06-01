@@ -194,6 +194,7 @@ select {
     margin: 12px;
     font-size: 1.15rem;
     background-color: #ccc;
+    overflow-x:hideen;
 }
 select#vulnability {
     width: 70%;
@@ -285,4 +286,7 @@ select#vulnability:hover + .p-vuln {
         margin: .5rem;
         padding: .6rem;
     }
+    select#payment-method {
+    width: 70%;
+}
 } 
